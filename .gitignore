@@ -57,3 +57,26 @@ typings/
 # dotenv environment variables file
 .env
 
+
+# Exclude compiled files
+build
+coverage
+/lib
+/test/regressions/screenshots/output
+/test/selenium-output
+.eslintcache
+tmp
+
+# OS files
+.DS_STORE
+
+# npm files
+node_modules
+*.log
+
+# Editor files
+.idea
+.vscode
+save-commands.json
+
+.nyc_output

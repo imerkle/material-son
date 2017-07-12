@@ -1,0 +1,40 @@
+{
+  "presets": ["stage-1", "react",
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions"]
+      }
+    }]
+  ],
+  "plugins": ["transform-decorators-legacy","transform-class-properties"],
+  "env": {
+    "development": {
+      "sourceMaps": "both",
+      "plugins": [
+        "flow-react-proptypes",
+        "transform-flow-strip-types"
+      ]
+    },
+    "test": {
+      "sourceMaps": "both",
+      "plugins": [
+        "flow-react-proptypes",
+        "transform-flow-strip-types"
+      ]
+    },
+    "production": {
+      "presets": ["react-optimize"],
+      "plugins": ["groundskeeper-willie","babel-plugin-loop-optimizer","closure-elimination",
+                    [
+                      "direct-import",
+                      [
+                        {
+                          "name": "material-ui",
+                          "indexFile": "material-ui/index.es"
+                        }
+                      ]
+                    ]
+                  ]
+    }
+  }
+}
