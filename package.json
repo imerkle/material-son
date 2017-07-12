@@ -79,7 +79,6 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "material-son": "file:./../material-son/build",
     "prop-types": "^15.5.10"
   }
 }
