@@ -35,5 +35,6 @@ jobs:
         
       # run tests!
       - run: yarn jest:unit
+      - run: yarn run build 
       - run: yarn run semantic-release || true
 
