@@ -1,12 +1,15 @@
 {
   "name": "material-son",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "index.js",
   "repository": "git@github.com:dsslimshaddy/material-son.git",
   "author": "Slim Shady <dsslimshaddy@gmail.com>",
   "license": "MIT",
   "config": {
     "destcopy": "~/gitRepos/utube/dev/js/material-son"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
   },
   "scripts": {
     "copy": "rimraf ~/gitRepos/utube/dev/js/material-son && mkdir -p ~/gitRepos/utube/dev/js/material-son/ && cp -R ./src/* ~/gitRepos/utube/dev/js/material-son/",
@@ -34,7 +37,8 @@
     "test:regressions": "webpack --config test/regressions/webpack.config.js && vrtest run --config test/vrtest.config.js --record",
     "argos": "argos upload test/regressions/screenshots/chrome --token $ARGOS_TOKEN || true",
     "flow": "flow --show-all-errors",
-    "publish": "npm run build && cd build && npm publish --tag next"
+    "publish": "npm run build && cd build && npm publish --tag next",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "peerDependencies": {
     "material-ui": "^1.0.0-alpha.21"
@@ -58,6 +62,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.24.1",
     "chai": "^4.0.2",
+    "condition-circle": "^1.5.0",
     "cross-env": "^5.0.1",
     "enzyme": "^2.9.1",
     "eslint": "^4.2.0",
@@ -75,7 +80,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
-    "webpack": "^3.1.0"
+    "webpack": "^3.1.0",
+    "semantic-release": "^6.3.6"
   },
   "dependencies": {
     "classnames": "^2.2.5",
