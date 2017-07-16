@@ -38,7 +38,7 @@
     "argos": "argos upload test/regressions/screenshots/chrome --token $ARGOS_TOKEN || true",
     "flow": "flow --show-all-errors",
     "publish": "npm run build && cd build && npm publish --tag next",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish ./build && semantic-release post"
   },
   "peerDependencies": {
     "material-ui": "^1.0.0-alpha.21"
