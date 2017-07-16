@@ -37,7 +37,7 @@
     "publish": "npm run build && cd build && npm publish --tag next"
   },
   "peerDependencies": {
-    "material-ui": "alpha"
+    "material-ui": "^1.0.0-alpha.21"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -70,7 +70,7 @@
     "flow-copy-source": "^1.2.0",
     "fs-extra": "^3.0.1",
     "jest": "^20.0.4",
-    "material-ui": "alpha",
+    "material-ui": "^1.0.0-alpha.21",
     "mocha": "^3.4.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
