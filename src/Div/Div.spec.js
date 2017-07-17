@@ -8,7 +8,7 @@ import Div from './Div';
 describe('Div', () => {
   it("Renders Div",() => {
     const str = "Hello World";
-    const element = shallow(<MuiThemeProvider><Div >{str}</Div></MuiThemeProvider>);
+    const element = shallow(<MuiThemeProvider><Div className="cl">{str}</Div></MuiThemeProvider>);
     expect(element.prop('children')).toEqual(str);
   });
 });

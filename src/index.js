@@ -7,6 +7,12 @@ export {
   default as FaDiv,
   Fa
 } from './FaDiv';
+
+export {
+  IconDiv
+} from './IconDiv';
+
+
 export {
   //default as List,
   ListItem,
