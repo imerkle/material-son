@@ -1,5 +1,9 @@
 // @flow
 export {
+  Div
+} from './Div';
+
+export {
   default as FaDiv,
   Fa
 } from './FaDiv';

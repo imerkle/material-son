@@ -4,6 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles, createStyleSheet } from 'material-ui/styles';
 import classNames from 'classnames';
+import { Div } from './Div';
 
 const styleSheetExport = createStyleSheet('FaFlexbox', theme => ({
   fa: {
@@ -17,14 +18,14 @@ const styleSheetExport = createStyleSheet('FaFlexbox', theme => ({
 const FaFlexbox = (props) => {
   const {children, classes, className, fs,...other} = props;
   return(
-    <div
+    <Div
       className={classNames(
         {[classes.fa]: (!fs) },
         {[classes.fs]: fs === true},
          className)}
        {...other}>
       {children}
-    </div>
+    </Div>
   );
   FaFlexbox.defaultProps = {
     fs: false
