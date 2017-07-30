@@ -13,11 +13,17 @@ export const styleSheet = createStyleSheet('MsonButton',theme => ({
 }));
 
 const ButtonX = (props) => {
-  const { fullWidth: fW , className, children, classes: {fullWidth, ...otherClasses}, ...other} = props;
+  const {
+    fullWidth: fW ,
+    classes: {fullWidth, ...otherClasses},
+    className,
+    children,
+    ...other} = props;
+
   return(
     <Button
        className = {cx(
-         [fullWidth]: fW,
+         { [fullWidth]: fW },
          className
        )}
        classes={{...otherClasses}}

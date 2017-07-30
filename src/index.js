@@ -26,7 +26,9 @@ export {
   LinearIndeterminate
 } from './Progress';
 
-
+export {
+  default as Link
+} from './Link';
 
 /*
 export { AppBar } from 'material-ui';
