@@ -11,10 +11,10 @@ const Div = (props) => {
       {children}
     </div>
   );
-  FaFlexbox.defaultProps = {
+  Div.defaultProps = {
     children: null
   }
-  FaFlexbox.propTypes = {
+  Div.propTypes = {
     children: PropTypes.node,
   }
 }

@@ -6,8 +6,7 @@ import { withStyles, createStyleSheet } from 'material-ui/styles';
 import classNames from 'classnames';
 import { Div } from '../Div';
 
-
-const styleSheetExport = createStyleSheet('FaDivFlexbox', theme => ({
+const styleSheetExport = createStyleSheet('FaDivFlexbox', {
   fc: {
     display: "flex"
   },
@@ -22,11 +21,14 @@ const styleSheetExport = createStyleSheet('FaDivFlexbox', theme => ({
   },
   fs: {
     flex: "1 1 auto"
+  },
+  vcenter: {
+    alignItems: "center"
   }
-}));
+});
 
 const FaDivFlexbox = (props) => {
-  const {children, classes, className, r, c, fa, fs,...other} = props;
+  const {children, classes, className, r, c, fa, fs, fullWidth, vcenter,...other} = props;
   return(
     <Div
       className={classNames(
@@ -35,6 +37,7 @@ const FaDivFlexbox = (props) => {
          {[classes.c]: c},
          {[classes.fa]: fa },
          {[classes.fs]: fs },
+         {[classes.vcenter]: vcenter },
         className)}
        {...other}>
       {children}

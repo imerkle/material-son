@@ -14,6 +14,9 @@ export {
 
 
 export {
+  default as Button
+} from './Button';
+export {
   //default as List,
   ListItem,
   ListItemText,
@@ -22,9 +25,6 @@ export {
 export {
   LinearIndeterminate
 } from './Progress';
-export {
-  Switch
-} from './Switch';
 
 
 

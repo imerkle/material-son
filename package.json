@@ -1,6 +1,6 @@
 {
   "name": "material-son",
-  "version": "0.0.0-development",
+  "version": "1.1.0",
   "main": "index.js",
   "repository": "git@github.com:dsslimshaddy/material-son.git",
   "author": "Slim Shady <dsslimshaddy@gmail.com>",
@@ -12,7 +12,7 @@
     "verifyConditions": "condition-circle"
   },
   "scripts": {
-    "copy": "rimraf ~/gitRepos/utube/dev/js/material-son && mkdir -p ~/gitRepos/utube/dev/js/material-son/ && cp -R ./src/* ~/gitRepos/utube/dev/js/material-son/",
+    "copy": "rimraf ~/gitRepos/utube/material-son && mkdir -p ~/gitRepos/utube/material-son/ && cp -R ./src/* ~/gitRepos/utube/material-son/",
     "deploy": "cd docs && yarn build && firebase deploy",
     "build": "npm run build:es2015 && npm run build:es2015modules && npm run build:copy-files && npm run build:umd:dev && npm run build:umd:prod",
     "build:es2015": "cross-env NODE_ENV=production babel ./src --ignore *.spec.js --out-dir ./build",
@@ -41,7 +41,7 @@
     "semantic-release": "semantic-release pre && npm publish ./build && semantic-release post"
   },
   "peerDependencies": {
-    "material-ui": "^1.0.0-alpha.21"
+    "material-ui": "next"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -75,16 +75,18 @@
     "flow-copy-source": "^1.2.0",
     "fs-extra": "^3.0.1",
     "jest": "^20.0.4",
-    "material-ui": "^1.0.0-alpha.21",
+    "material-ui": "next",
     "mocha": "^3.4.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
-    "webpack": "^3.1.0",
-    "semantic-release": "^6.3.6"
+    "semantic-release": "^6.3.6",
+    "webpack": "^3.1.0"
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "prop-types": "^15.5.10"
+    "global": "^4.3.2",
+    "prop-types": "^15.5.10",
+    "react-contextmenu": "^2.6.5"
   }
 }
