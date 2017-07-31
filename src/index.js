@@ -30,6 +30,10 @@ export {
   default as Link
 } from './Link';
 
+export {
+  default as TextField
+} from './TextField';
+
 /*
 export { AppBar } from 'material-ui';
 export { Avatar } from 'material-ui';
