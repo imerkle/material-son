@@ -19,16 +19,17 @@ const TextFieldX = (props) => {
   const {
     withUnderline,
     classes,
-    className,
+    InputClassName,
     children,
     ...other,
   } = props;
   return(
     <TextField
-       className = {cx(
-         { [classes.underline] : !withUnderline },
-         className
-       )}
+
+        InputClassName={cx(
+            { [classes.underline]: !withUnderline }
+            ,InputClassName
+          )}
        {...other}
        >
       {children}
