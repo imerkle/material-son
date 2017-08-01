@@ -8,8 +8,9 @@ import { withStyles, createStyleSheet } from 'material-ui/styles';
 import cx from 'classnames';
 
 export const styleSheet = createStyleSheet('MsonTextField',theme => ({
+  disabled: {},
   underline: {
-    '&:hover:before': {
+    '&:hover:not($disabled):before': {
       backgroundColor: 'transparent',
     },
   },
@@ -19,17 +20,21 @@ const TextFieldX = (props) => {
   const {
     withUnderline,
     classes,
-    InputClassName,
+    InputProps: {classes: classesInputProps,...otherInputProps},
     children,
     ...other,
   } = props;
   return(
     <TextField
 
-        InputClassName={cx(
-            { [classes.underline]: !withUnderline }
-            ,InputClassName
-          )}
+        InputProps = {{
+            classes: {
+              ...classesInputProps,
+              disabled: classes.disabled,
+              underline: classes.underline,
+            },
+            ...otherInputProps
+          }}
        {...other}
        >
       {children}
