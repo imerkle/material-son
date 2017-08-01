@@ -1,20 +1,21 @@
 // @flow
 export {
-  Div
+  Div,
+  Span,
 } from './Div';
 
 export {
   default as FaDiv,
-  Fa
+  Fa,
 } from './FaDiv';
 
 export {
-  IconDiv
+  IconDiv,
 } from './IconDiv';
 
 
 export {
-  default as Button
+  default as Button,
 } from './Button';
 export {
   //default as List,
@@ -23,15 +24,15 @@ export {
 } from './List';
 
 export {
-  LinearIndeterminate
+  LinearIndeterminate,
 } from './Progress';
 
 export {
-  default as Link
+  default as Link,
 } from './Link';
 
 export {
-  default as TextField
+  default as TextField,
 } from './TextField';
 
 /*

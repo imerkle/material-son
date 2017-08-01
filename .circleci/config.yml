@@ -39,7 +39,7 @@ jobs:
       #- run: npm version patch
       - run: yarn run build
       #- run: npm publish ./build
-      - run: yarn run semantic-release || true
+      #- run: yarn run semantic-release || true
 
 notify:
   webhooks:
