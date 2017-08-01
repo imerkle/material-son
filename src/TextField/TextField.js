@@ -11,7 +11,7 @@ export const styleSheet = createStyleSheet('MsonTextField',theme => ({
   disabled: {},
   underline: {
     '&:hover:not($disabled):before': {
-      backgroundColor: 'transparent',
+      backgroundColor: theme.palette.input.bottomLine,
     },
   },
 }));
@@ -25,10 +25,13 @@ const TextFieldX = (props) => {
     ...other,
   } = props;
 
+  let IP;
   if(!InputProps){
-    InputProps = {};
+    IP = {};
+  }else{
+    IP = InputProps;
   }
-  const {classes: classesInputProps,...otherInputProps} = InputProps;
+  const {classes: classesInputProps,...otherInputProps} = IP;
 
   return(
     <TextField
