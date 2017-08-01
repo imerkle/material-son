@@ -42,10 +42,14 @@ const TextFieldX = (props) => {
   );
   TextFieldX.defaultProps = {
     children: null,
+    InputProps: {},
+    withUnderline: false,
   }
   TextFieldX.propTypes = {
     classes: PropTypes.object.isRequired,
     children: PropTypes.node,
+    InputProps: PropTypes.object,
+    withUnderline: PropTypes.bool,
   }
 }
 
