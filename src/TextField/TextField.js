@@ -20,10 +20,16 @@ const TextFieldX = (props) => {
   const {
     withUnderline,
     classes,
-    InputProps: {classes: classesInputProps,...otherInputProps},
+    InputProps,
     children,
     ...other,
   } = props;
+
+  if(!InputProps){
+    InputProps = {};
+  }
+  const {classes: classesInputProps,...otherInputProps} = InputProps;
+
   return(
     <TextField
 
