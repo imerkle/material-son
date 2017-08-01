@@ -12,6 +12,7 @@ export const styleSheet = createStyleSheet('MsonTextField',theme => ({
   underline: {
     '&:hover:not($disabled):before': {
       backgroundColor: theme.palette.input.bottomLine,
+      height: 1,
     },
   },
 }));

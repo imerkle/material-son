@@ -11,9 +11,10 @@ export const styleSheet = createStyleSheet('MsonLink',theme => ({
   root: {
     color: theme.palette.text.primary,
     textDecoration: 'none',
+    paddingBottom: '5px',
+    borderBottom: `2px solid transparent`,
     '&:hover': {
-      borderBottom: `2px solid ${theme.palette.text.primary}`,
-      paddingBottom: '5px',
+      borderColor: theme.palette.text.primary,
     },
   },
   faded: {
@@ -22,6 +23,7 @@ export const styleSheet = createStyleSheet('MsonLink',theme => ({
     '&:hover': {
       color: theme.palette.text.primary,
       textDecoration: 'none',
+      borderColor: `transparent`,
     },
   },
 }));
