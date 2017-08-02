@@ -16,6 +16,7 @@ export {
 
 export {
   default as Button,
+  AButton,
 } from './Button';
 export {
   //default as List,
