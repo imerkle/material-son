@@ -19,13 +19,14 @@ class AButton extends React.Component {
     fulFilledText: PropTypes.node,
     rejectedText: PropTypes.node,
     onClick: PropTypes.func,
+    loadingSize: PropTypes.number,
   };
 
   static defaultProps = {
     loadingClass: 'AButton--loading',
     fulFilledClass: 'AButton--fulfilled',
     rejectedClass: 'AButton--rejected',
-    pendingText: <CircularProgress />
+    loadingSize: 14,
   };
 
 
@@ -81,6 +82,7 @@ class AButton extends React.Component {
       children,
       text,
       pendingText,
+      loadingSize,
       fulFilledText,
       rejectedText,
       className,
@@ -99,7 +101,7 @@ class AButton extends React.Component {
     let buttonText;
 
     if (isPending) {
-      buttonText = pendingText;
+      buttonText = pendingText || <CircularProgress size={loadingSize} />;
     } else if (isFulfilled) {
       buttonText = fulFilledText;
     } else if (isRejected) {
