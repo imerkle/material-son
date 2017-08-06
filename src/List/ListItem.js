@@ -10,7 +10,7 @@ import Fa from '../FaDiv/Fa';
 const styleSheetExport = createStyleSheet('OverridesClassNames',{
   gutters: {
     padding: "4px 16px"
-  }
+  },
 });
 
 const AList = (props) => {

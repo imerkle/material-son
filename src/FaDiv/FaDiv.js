@@ -24,11 +24,14 @@ const styleSheetExport = createStyleSheet('FaDivFlexbox', {
   },
   vcenter: {
     alignItems: "center"
-  }
+  },
+  hcenter: {
+    justifyContent: "center"
+  },
 });
 
 const FaDivFlexbox = (props) => {
-  const {children, classes, className, r, c, fa, fs, fullWidth, vcenter,...other} = props;
+  const {children, classes, className, r, c, fa, fs, fullWidth, vcenter, hcenter,...other} = props;
   return(
     <Div
       className={classNames(
@@ -38,6 +41,7 @@ const FaDivFlexbox = (props) => {
          {[classes.fa]: fa },
          {[classes.fs]: fs },
          {[classes.vcenter]: vcenter },
+         {[classes.hcenter]: hcenter },
         className)}
        {...other}>
       {children}
