@@ -14,14 +14,15 @@ const styleSheetExport = createStyleSheet('OverridesClassNames',{
 });
 
 const AList = (props) => {
-  const {classes, className, isVisible,...other} = props;
+  const {classes, className, isVisible, dense,...other} = props;
   return(
     <List className={classNames(
       classes.root,
       {[classes.visible]: isVisible},
       {[classes.invisible]: !isVisible},
       className
-    )} {...other}>
+    )}
+    {...other}>
       {other.children}
     </List>
   );
@@ -50,13 +51,15 @@ class WListItem extends React.Component{
     };
   }
   static defaultProps = {
-    nestedItems: []
+    nestedItems: [],
+    dense: true,
   }
   static propTypes = {
-    nestedItems: PropTypes.array
+    nestedItems: PropTypes.array,
+    dense: PropTypes.bool,
   }
   render(){
-    const {nestedItems,...others} = this.props;
+    const {nestedItems, dense,...others} = this.props;
     let nest;
     if(nestedItems.length > 0){
       nest = (
@@ -74,7 +77,7 @@ class WListItem extends React.Component{
     }
     let out;
     if(nest){
-      out = (<ListItem {...others}>
+      out = (<ListItem dense={dense} {...others}>
         <Fa>
           {others.children}
         </Fa>
@@ -84,7 +87,7 @@ class WListItem extends React.Component{
       </ListItem>)
     }else{
         out = (
-          <ListItem {...others}>
+          <ListItem dense={dense} {...others}>
             {others.children}
           </ListItem>
         )
