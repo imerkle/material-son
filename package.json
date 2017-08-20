@@ -40,9 +40,7 @@
     "publish": "npm run build && cd build && npm publish --tag next",
     "semantic-release": "semantic-release pre && npm publish ./build && semantic-release post"
   },
-  "peerDependencies": {
-    "material-ui": "next"
-  },
+  "peerDependencies": {},
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
@@ -75,7 +73,6 @@
     "flow-copy-source": "^1.2.0",
     "fs-extra": "^3.0.1",
     "jest": "^20.0.4",
-    "material-ui": "next",
     "mocha": "^3.4.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -87,6 +84,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "global": "^4.3.2",
+    "material-ui": "1.0.0-beta.6",
     "prop-types": "^15.5.10",
     "react-contextmenu": "^2.6.5"
   }

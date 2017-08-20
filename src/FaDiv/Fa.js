@@ -2,18 +2,18 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
 import classNames from 'classnames';
 import { Div } from '../Div';
 
-const styleSheetExport = createStyleSheet('FaFlexbox', theme => ({
+const styleSheetExport = theme => ({
   fa: {
     flex: "0 1 auto"
   },
   fs: {
     flex: "1 1 auto"
   }
-}));
+});
 
 const FaFlexbox = (props) => {
   const {children, classes, className, fs,...other} = props;

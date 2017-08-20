@@ -2,11 +2,11 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
 import classNames from 'classnames';
 import { Div } from '../Div';
 
-const styleSheetExport = createStyleSheet('FaDivFlexbox', {
+const styleSheetExport = {
   fc: {
     display: "flex"
   },
@@ -28,7 +28,7 @@ const styleSheetExport = createStyleSheet('FaDivFlexbox', {
   hcenter: {
     justifyContent: "center"
   },
-});
+};
 
 const FaDivFlexbox = (props) => {
   const {children, classes, className, r, c, fa, fs, fullWidth, vcenter, hcenter,...other} = props;

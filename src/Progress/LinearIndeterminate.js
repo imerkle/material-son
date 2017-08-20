@@ -1,14 +1,14 @@
 // @flow
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
 import { LinearProgress } from 'material-ui';
 
-const styleSheet = createStyleSheet('LinearIndeterminate', {
+const styleSheet = {
   root: {
     width: '100%'
   },
-});
+};
 
 function LinearIndeterminate(props) {
   const classes = props.classes;

@@ -4,10 +4,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
 import cx from 'classnames';
 
-export const styleSheet = createStyleSheet('MsonLink',theme => ({
+export const styleSheet = theme => ({
   root: {
     color: theme.palette.text.primary,
     textDecoration: 'none',
@@ -26,7 +26,7 @@ export const styleSheet = createStyleSheet('MsonLink',theme => ({
       borderColor: `transparent`,
     },
   },
-}));
+});
 
 const LinkX = (props) => {
   const {

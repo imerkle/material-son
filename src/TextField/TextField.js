@@ -4,10 +4,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { TextField } from 'material-ui';
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
 import cx from 'classnames';
 
-export const styleSheet = createStyleSheet('MsonTextField',theme => ({
+export const styleSheet = theme => ({
   disabled: {},
   underline: {
     '&:hover:not($disabled):before': {
@@ -15,7 +15,7 @@ export const styleSheet = createStyleSheet('MsonTextField',theme => ({
       height: 1,
     },
   },
-}));
+});
 
 const TextFieldX = (props) => {
   const {

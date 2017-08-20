@@ -2,16 +2,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {List,ListItem} from 'material-ui';
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
 import classNames from 'classnames';
 
 import Fa from '../FaDiv/Fa';
 
-const styleSheetExport = createStyleSheet('OverridesClassNames',{
+const styleSheetExport = {
   gutters: {
     padding: "4px 16px"
   },
-});
+};
 
 const AList = (props) => {
   const {classes, className, isVisible, dense,...other} = props;
@@ -28,7 +28,7 @@ const AList = (props) => {
   );
 }
 
-const AnimateList = withStyles(createStyleSheet('MsonLists',{
+const AnimateList = withStyles({
   root: {
     "transition": ".15s linear max-height",
     "overflow": "hidden"
@@ -41,7 +41,7 @@ const AnimateList = withStyles(createStyleSheet('MsonLists',{
     "padding": "0px",
 
   }
-}))(AList);
+})(AList);
 
 class WListItem extends React.Component{
   constructor(props){
