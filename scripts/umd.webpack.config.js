@@ -15,7 +15,7 @@ const baseConfig = {
     umdNamedDefine: true,
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         loader: 'babel-loader',
@@ -36,15 +36,12 @@ if (process.env.NODE_ENV === 'production') {
     output: Object.assign({}, baseConfig.output, {
       filename: `${LIBRARY_NAME}.production.min.js`,
     }),
+    optimization: {
+      minimize: true
+    },    
     plugins: baseConfig.plugins.concat([
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify('production'),
-      }),
-      new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          warnings: false,
-          screw_ie8: true,
-        },
       }),
     ]),
   });

@@ -79,7 +79,8 @@
     "react-router-dom": "^4.1.2",
     "react-test-renderer": "^16.4.1",
     "semantic-release": "^15.6.0",
-    "webpack": "^4.14.0"
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8"
   },
   "dependencies": {
     "global": "^4.3.2",
