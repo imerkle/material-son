@@ -1,8 +1,8 @@
 // @flow
 import React from 'react';
 import PropTypes from 'prop-types';
-import {List,ListItem} from 'material-ui';
-import { withStyles } from 'material-ui/styles';
+import {List,ListItem} from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 
 import Fa from '../FaDiv/Fa';

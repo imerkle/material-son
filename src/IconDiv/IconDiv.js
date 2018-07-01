@@ -2,7 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import {IconButton, Icon} from 'material-ui';
+import {IconButton, Icon} from '@material-ui/core';
 import { default as FaDiv, Fa} from '../FaDiv';
 
 class IconDiv extends React.Component{

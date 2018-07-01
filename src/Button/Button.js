@@ -2,8 +2,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'material-ui';
-import { withStyles } from 'material-ui/styles';
+import { Button } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 import cx from 'classnames';
 
 export const styleSheet = theme => ({

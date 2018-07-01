@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 import Button from './Button.js';
-import { CircularProgress } from 'material-ui';
+import { CircularProgress } from '@material-ui/core';
 
 class AButton extends React.Component {
 

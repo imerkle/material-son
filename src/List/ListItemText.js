@@ -1,8 +1,8 @@
 // @flow
 import React from 'react';
 import PropTypes from 'prop-types';
-import {ListItemText} from 'material-ui';
-import { withStyles } from 'material-ui/styles';
+import {ListItemText} from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 
 const styleSheetExport = {

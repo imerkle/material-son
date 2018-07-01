@@ -7,6 +7,11 @@
 import { assert } from 'chai';
 import * as MaterialSon from './index';
 
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+configure({ adapter: new Adapter() });
+
+
 describe('Material-Son', () => {
   it('should have exports', () => assert.ok(MaterialSon));
 

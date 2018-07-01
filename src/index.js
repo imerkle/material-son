@@ -37,18 +37,18 @@ export {
 } from './TextField';
 
 /*
-export { AppBar } from 'material-ui';
-export { Avatar } from 'material-ui';
-export { Badge } from 'material-ui';
+export { AppBar } from '@material-ui/core';
+export { Avatar } from '@material-ui/core';
+export { Badge } from '@material-ui/core';
 
-export { BottomNavigation, BottomNavigationButton } from 'material-ui';
+export { BottomNavigation, BottomNavigationButton } from '@material-ui/core';
 
-export { Button } from 'material-ui';
+export { Button } from '@material-ui/core';
 
-export { Card, CardActions, CardContent, CardHeader, CardMedia } from 'material-ui';
+export { Card, CardActions, CardContent, CardHeader, CardMedia } from '@material-ui/core';
 
-export { Checkbox } from 'material-ui';
-export { Chip } from 'material-ui';
+export { Checkbox } from '@material-ui/core';
+export { Chip } from '@material-ui/core';
 
 export {
   Dialog,
@@ -56,20 +56,20 @@ export {
   DialogContent,
   DialogContentText,
   DialogTitle,
-} from 'material-ui';
+} from '@material-ui/core';
 
-export { Divider } from 'material-ui';
-export { Drawer } from 'material-ui';
+export { Divider } from '@material-ui/core';
+export { Drawer } from '@material-ui/core';
 
-export { FormControl, FormGroup, FormLabel, FormHelperText, FormControlLabel } from 'material-ui';
+export { FormControl, FormGroup, FormLabel, FormHelperText, FormControlLabel } from '@material-ui/core';
 
-export { Hidden } from 'material-ui';
-export { Icon } from 'material-ui';
-export { IconButton } from 'material-ui';
+export { Hidden } from '@material-ui/core';
+export { Icon } from '@material-ui/core';
+export { IconButton } from '@material-ui/core';
 
-export { Input, InputLabel } from 'material-ui';
+export { Input, InputLabel } from '@material-ui/core';
 
-export { Grid } from 'material-ui';
+export { Grid } from '@material-ui/core';
 
 export {
   List,
@@ -77,28 +77,28 @@ export {
   ListItemIcon,
   ListItemSecondaryAction,
   ListSubheader,
-} from 'material-ui';
+} from '@material-ui/core';
 
-export { Menu, MenuItem, MenuList } from 'material-ui';
+export { Menu, MenuItem, MenuList } from '@material-ui/core';
 
-export { Paper } from 'material-ui';
+export { Paper } from '@material-ui/core';
 
-export { CircularProgress, LinearProgress } from 'material-ui';
+export { CircularProgress, LinearProgress } from '@material-ui/core';
 
-export { Radio, RadioGroup } from 'material-ui';
+export { Radio, RadioGroup } from '@material-ui/core';
 
-export { Snackbar, SnackbarContent } from 'material-ui';
+export { Snackbar, SnackbarContent } from '@material-ui/core';
 
-export { MuiThemeProvider } from 'material-ui';
+export { MuiThemeProvider } from '@material-ui/core';
 
 // eslint-disable-next-line import/first
-import * as colors from 'material-ui';
+import * as colors from '@material-ui/core';
 
 export { colors };
 
-export { SvgIcon } from 'material-ui';
+export { SvgIcon } from '@material-ui/core';
 
-export { Switch } from 'material-ui';
+export { Switch } from '@material-ui/core';
 
 export {
   Table,
@@ -107,13 +107,13 @@ export {
   TableHead,
   TableRow,
   TableSortLabel,
-} from 'material-ui';
+} from '@material-ui/core';
 
-export { Tabs, Tab } from 'material-ui';
+export { Tabs, Tab } from '@material-ui/core';
 
-export { Typography } from 'material-ui';
+export { Typography } from '@material-ui/core';
 
-export { TextField } from 'material-ui';
+export { TextField } from '@material-ui/core';
 
-export { Toolbar } from 'material-ui';
+export { Toolbar } from '@material-ui/core';
 */

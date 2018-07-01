@@ -3,8 +3,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { TextField } from 'material-ui';
-import { withStyles } from 'material-ui/styles';
+import { TextField } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 import cx from 'classnames';
 
 export const styleSheet = theme => ({
